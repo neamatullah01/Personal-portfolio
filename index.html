@@ -91,10 +91,12 @@
     <!-- home section  -->
     <section class="home pt-5 pb-5" id="home">
       <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-4 d-block order-md-1">
+          <img src="images/profile-pic.png" class="img-fluid" alt="" />
+        </div>
         <div
-          class="col-10 col-md-6 text-center text-md-start pt-5"
-          data-aos="slide-right"
+          class="col-10 col-md-6 text-center text-md-start pt-5 order-md-2"
+          data-aos="slide-left"
         >
           <h2 style="color: #3f396d">
             Hello! I Am <br /><span class="c-orange">Neamat Ullah</span>
@@ -110,11 +112,10 @@
           </button>
           <a href="" class="link ms-4 d-none">See My Work</a>
         </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/profile-pic.png" class="img-fluid" alt="" />
-        </div>
       </div>
     </section>
+    
+    
 
     <!-- expertise section-->
     <section class="expertise mt-5 pb-5" id="service">
@@ -125,19 +126,17 @@
           Digital Services
         </h3>
       </div>
-      <div
-        class="d-flex flex-row justify-content-around align-items-center mt-5"
-      >
-        <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="row justify-content-around align-items-center mt-5 px-2">
+        <div class="col-md-4 col-10 mb-4" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
                 src="images/service-icon2.png"
-                class="w-25 img-fluid img"
+                class="w-25 img-fluid"
                 alt=""
               />
             </div>
-            <div class="content mt-3">
+            <div class="content mt-3 text-center">
               <h4>Web Development</h4>
               <p class="text-muted">
                 I build responsive, dynamic websites using React, Express, and
@@ -147,16 +146,17 @@
             </div>
           </div>
         </div>
-        <div class="col-10 col-md-4" data-aos="fade-up">
+      
+        <div class="col-md-4 col-10 mb-4" data-aos="fade-up">
           <div class="service-card">
-            <div class="img w-full">
+            <div class="img">
               <img
                 src="images/service-icon1.png"
-                class="w-25 img-fluid img"
+                class="w-25 img-fluid"
                 alt=""
               />
             </div>
-            <div class="content mt-3">
+            <div class="content mt-3 text-center">
               <h4>Problem Solving</h4>
               <p class="text-muted">
                 I enjoy tackling complex problems, breaking them down, and
@@ -167,16 +167,17 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
+      
+        <div class="col-md-4 col-10 mb-4" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
                 src="images/service-icon3.png"
-                class="w-25 img-fluid img"
+                class="w-25 img-fluid"
                 alt=""
               />
             </div>
-            <div class="content mt-3">
+            <div class="content mt-3 text-center">
               <h4>Debugging</h4>
               <p class="text-muted">
                 I excel at identifying and fixing bugs across both front-end and
@@ -187,6 +188,7 @@
           </div>
         </div>
       </div>
+      
     </section>
     <!-- skill section -->
     <section class="skill mt-5 py-5" id="about">
@@ -387,6 +389,80 @@
           </div>
         </div>
         
+    </section>
+    <!-- contact section -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Ashulia,Savar,Dhaka</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+088 0191-4739559</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>neamat22205101908@diu.edu.bd</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- bootstrap javascript cdn link  -->

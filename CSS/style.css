@@ -220,3 +220,25 @@ body {
 .post .card {
   border: none;
 }
+
+/* contact section */
+
+.contact {
+  background-color: #f3f3f3;
+}
+.contact-details i {
+  font-size: 1.5rem;
+  color: #fca61f;
+}
+.contact-details p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #fca61f;
+}
+.contact-form .form-control {
+  padding: 10px 10px;
+  width: 80%;
+}
