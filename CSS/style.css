@@ -206,7 +206,7 @@ body {
 }
 
 /* portfolio section */
-.portfolio {
+.projects {
   background: linear-gradient(
     33deg,
     rgb(245, 245, 235) 0%,
@@ -241,4 +241,64 @@ body {
 .contact-form .form-control {
   padding: 10px 10px;
   width: 80%;
+}
+
+/* footer section */
+
+footer {
+  background-color: #211e39;
+}
+
+footer .link-group a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+footer .link-group a:hover {
+  color: #fca61f;
+}
+.social-links button {
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 14px 15px 10px 15px;
+}
+.social-links .linkedin {
+  color: #f33a7e;
+}
+.social-links button:hover {
+  color: #fff;
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+.social-links .linkedin:hover {
+  background-color: #f33a7e;
+}
+.social-links .whatsapp {
+  color: #25d366;
+}
+.social-links .whatsapp:hover {
+  background-color: #25d366;
+}
+.social-links .twitter {
+  color: #255afc;
+}
+.social-links .twitter:hover {
+  background-color: #255afc;
+}
+
+/*back to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 1.4rem;
+  background-color: #fca61f;
+  color: #fff;
+  animation: pulse 3s infinite;
 }

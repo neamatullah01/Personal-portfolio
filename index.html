@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neamat Ullah</title>
+    <link rel="icon" href="images/" type="image/png" />
 
     <!-- bootstrap css cdn link  -->
     <link
@@ -70,21 +71,15 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
           </ul>
         </div>
-        <button
-          class="c-btn btn btn-outline-primary ms-4 py-2 px-4 rounded-pill d-none d-md-block"
-        >
-          Contact
-        </button>
+        <a class="c-btn btn btn-outline-primary ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+          href="#contact"
+          >
+        Contact
+        </a>
       </div>
     </nav>
 
@@ -107,16 +102,15 @@
             websites and handling back-end systems to deliver end-to-end
             solutions.
           </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Contact Me
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+          >
+          Contact Me
           </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
+
         </div>
       </div>
     </section>
-    
-    
-
     <!-- expertise section-->
     <section class="expertise mt-5 pb-5" id="service">
       <div class="heading text-center">
@@ -263,8 +257,8 @@
         </div>
       </div>
     </section>
-    <!-- portfolio section -->
-    <section class="portfolio" id="portfolio">
+    <!-- projects section -->
+    <section class="projects" id="projects">
       <div class="heading text-center pt-5">
         <small>Creative Work</small>
         <h3>Check My Projects</h3>
@@ -464,7 +458,43 @@
         </div>
       </div>
     </section>
+    <!-- back to top button -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- footer section  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#projects">Projects</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button onclick="window.open('https://www.linkedin.com/in/neamat-ullah-938468290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')" class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button onclick="window.open('https://wa.me/qr/2WJLI3KMVF5FL1', '_blank')" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button onclick="window.open('https://x.com/01neamat?t=DAq_v5oNmIFSfMXNJ9UBNg&s=09', '_blank')" class="rounded-pill twitter">
+          <i class="bi bi-twitter"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
 
+      <p>&copy; <span id="year"></span> Portfolio | All Rights Reserved.</p>
+    </footer>
     <!-- bootstrap javascript cdn link  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
