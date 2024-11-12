@@ -204,3 +204,19 @@ body {
 .heading p {
   font-size: 1.3rem;
 }
+
+/* portfolio section */
+.portfolio {
+  background: linear-gradient(
+    33deg,
+    rgb(245, 245, 235) 0%,
+    rgb(225, 225, 220) 100%
+  );
+}
+.post .content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.post .card {
+  border: none;
+}
